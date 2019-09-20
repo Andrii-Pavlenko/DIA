@@ -1,0 +1,96 @@
+.clients
+  background-color: $blue
+  font-family: "Muli", sans-serif
+  max-width: 1600px
+  height: 775px
+  position: relative
+  top: -245px
+  padding-top: 200px
+
+  &__conteiner
+    position: relative
+    z-index: 3
+    margin-left: 227px
+
+  &__welcome
+    font-weight: 800
+    font-size: 16px
+    line-height: 1.5
+    display: block
+    color: $white
+    text-transform: uppercase
+    top: 200px
+    margin: 0 0 19px 40px
+
+    &::before
+      content: ''
+      background-image: url("../im/Vector1.svg")
+      height: 21px
+      width: 21px
+      color: $white
+      display: block
+      margin-left: -37px
+      margin-bottom: -23px
+
+  &__heading
+    color: $black
+    width: 100%
+    font-weight: 900
+    font-size: 32px
+    line-height: 1.4
+    display: block
+
+  &__text
+    font-family: "Muli", sans-serif
+    color: $white
+    margin-top: 64px
+    font-weight: normal
+    font-size: 16px
+    line-height: 1.5
+    position: relative
+
+    &:last-child
+      margin-bottom: 160px
+
+    &_1, &_2, &_3
+      display: inline-block
+      position: relative
+      margin-left: 32px
+
+  &__img
+    width: 64px
+    height: 64px
+    border-radius: 50%
+    background-color: $white
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 24px 24px
+    display: inline-block
+    position: relative
+    bottom: 10px
+
+    &_1
+      background-image: url("../im/client-img1.svg")
+
+    &_2
+      background-image: url("../im/client-img2.svg")
+
+    &_3
+      background-image: url("../im/client-img3.svg")
+
+  &__photo
+    width: 1100px
+    height: 975px
+    position: absolute
+    bottom: 0
+    right: -52px
+    background-image: url("../im/clients.png")
+
+
+@media screen and (max-width: 900px)
+  .clients
+    &__conteiner
+      padding: 20px
+      margin: 0 auto
+      max-width: 404px
+

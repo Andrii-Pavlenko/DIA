@@ -1,0 +1,85 @@
+.services
+  max-width: 1600px
+  font-family: 'Muli', sans-serif
+  height: auto
+  text-align: center
+  position: relative
+  background-color: $white
+  z-index: 0
+
+  &__heading
+    color: $black
+    width: 100%
+    text-align: center
+    font-weight: 900
+    font-size: 48px
+    line-height: 1
+    margin: -24px auto 0
+    display: block
+    position: absolute
+
+  &__card
+    width: 264px
+    height: 382px
+    box-sizing: border-box
+    margin: 160px 20px
+    transition: 1s
+
+    &__room
+      border-radius: 50%
+      object-fit: cover
+      width: 160px
+      height: 160px
+
+    &__upText
+      font-weight: 900
+      font-size: 19.6px
+      line-height: 1.4
+      display: block
+      margin: 64px 0 32px
+
+    &__lowText
+      font-weight: normal
+      font-size: 16px
+      line-height: 1.5
+      display: block
+
+  &__cards
+    display: grid
+    grid-template-columns: repeat(3, 264px)
+    grid-gap: 130px
+    justify-content: center
+    text-align: left
+    transition: 1s
+
+@media screen and (max-width: 1110px)
+  .services
+    &__heading
+      font-size: 42px
+
+    &__cards
+      display: grid
+      grid-template-columns: repeat(2, 264px)
+      justify-content: center
+
+    &__card
+      margin: 0 30px
+
+      &:first-child, &:nth-child(2)
+        margin-top: 70px
+
+@media screen and (max-width: 710px)
+  .services
+    &__heading
+      font-size: 36px
+
+    &__cards
+      display: grid
+      grid-template-columns: 264px
+      justify-content: center
+
+    &__card
+      margin: 0 30px
+
+      &:nth-child(2)
+        margin-top: 30px
