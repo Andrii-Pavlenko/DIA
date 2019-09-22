@@ -45,47 +45,59 @@ a {
     box-sizing: border-box;
     font-weight: Bold;
     max-width: 948px;
-    top: 48px;
+    top: 15px;
     position: absolute;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-left: 227px; }
+    margin-left: 227px;
+    transition: 1s; }
     .header__nav__link {
-      color: white;
-      text-decoration: none; }
-      .header__nav__link_active::after {
+      text-decoration: none;
+      color: #FFFFFF;
+      padding: 0 15px;
+      z-index: 3;
+      white-space: nowrap;
+      line-height: 1.5;
+      display: inline-block;
+      transition: all 1s;
+      position: relative; }
+      .header__nav__link:hover::after {
         content: "";
         border-radius: 32px;
         background-color: #FCC304;
         height: 4px;
         position: absolute;
-        bottom: 0;
-        left: -5px;
+        z-index: 5;
+        top: 31px;
         right: 0;
-        width: 64px;
-        color: #FFFFFF; }
+        width: 80%;
+        left: 10%; }
+    .header__nav_menu {
+      height: 30px;
+      width: 100%;
+      margin: 0 15px;
+      transition: all 1s; }
+      .header__nav_menu:last-of-type {
+        margin-left: 135px;
+        position: relative; }
     .header__nav_list {
       margin: 0;
       list-style: none;
       display: flex;
       padding: 0;
-      justify-content: space-between; }
-    .header__nav_menu {
-      color: #FFFFFF;
-      margin: 0 31px;
-      z-index: 3;
-      white-space: nowrap;
-      line-height: 1.5;
-      display: inline-block; }
-      .header__nav_menu:nth-child(1) {
-        margin: 0 80px 0 0;
-        font-weight: Bold;
-        font-size: 32px;
-        line-height: 1; }
-      .header__nav_menu:last-child {
-        margin-left: 135px;
+      justify-content: space-between;
+      transition: 1s; }
+      .header__nav_list:last-child {
+        margin-left: 200px;
         position: relative; }
+    .header__nav_dia {
+      position: relative;
+      top: 30px;
+      margin: 0;
+      font-weight: Bold;
+      font-size: 32px;
+      line-height: 1;
+      color: #FFFFFF;
+      transition: 1s; }
 
 .global {
   font-weight: 900;
@@ -204,7 +216,12 @@ a {
     .header__nav {
       width: calc(100% - 200px);
       justify-content: space-evenly;
-      margin-left: 100px; }
+      margin-left: 100px;
+      text-align: left; }
+      .header__nav_dia {
+        position: absolute; }
+      .header__nav_list {
+        margin-top: 35px; }
       .header__nav_menu {
         margin: 0;
         padding-bottom: 5px; }
@@ -276,19 +293,29 @@ a {
   .header__block1 {
     height: 1600px; }
   .header__nav {
-    top: 120px; }
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    margin: 0; }
+    .header__nav_dia {
+      position: absolute;
+      left: 50px; }
     .header__nav_list {
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin-top: 25px; }
+      .header__nav_list:last-child {
+        margin-left: 0; }
     .header__nav_menu {
       margin-top: 10px; }
 
   .global {
     width: 100%;
-    font-size: 45px; }
+    font-size: 40px; }
     .global__bigConteiner {
       position: relative;
-      margin-top: 260px;
+      margin-top: 270px;
       margin-left: 10px;
       text-align: center; }
     .global__text {
@@ -383,6 +410,9 @@ a {
     box-sizing: border-box;
     margin: 160px 20px;
     transition: 1s; }
+    .services__card:hover {
+      transform: scale(1.2);
+      background-color: #eeeeee; }
     .services__card__room {
       border-radius: 50%;
       object-fit: cover;
@@ -597,7 +627,10 @@ a {
     background-size: 24px 24px;
     display: inline-block;
     position: relative;
-    bottom: 10px; }
+    bottom: 10px;
+    transition: 1s; }
+    .clients__img:hover {
+      transform: scale(1.5); }
     .clients__img_1 {
       background-image: url("../im/client-img1.svg"); }
     .clients__img_2 {
@@ -837,6 +870,9 @@ a {
       margin: 24px auto;
       font-family: inherit;
       background-color: #fcfcfd; }
+      .footer__form_input:focus {
+        outline: none;
+        background-color: #eeeeee; }
       .footer__form_input::placeholder {
         font-weight: bold;
         font-size: 14.4px;

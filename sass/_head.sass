@@ -34,28 +34,44 @@
     box-sizing: border-box
     font-weight: Bold
     max-width: 948px
-    top: 48px
+    top: 15px
     position: absolute
-    display: flex
-    flex-direction: column
     justify-content: center
     margin-left: 227px
+    transition: 1s
 
     &__link
-      color: white
       text-decoration: none
+      color: $white
+      padding: 0 15px
+      z-index: 3
+      white-space: nowrap
+      line-height: 1.5
+      display: inline-block
+      transition: all 1s
+      position: relative
 
-      &_active::after
+      &:hover::after
         content: ""
         border-radius: 32px
         background-color: $orange
         height: 4px
         position: absolute
-        bottom: 0
-        left: -5px
+        z-index: 5
+        top: 31px
         right: 0
-        width: 64px
-        color: $white
+        width: 80%
+        left: 10%
+
+    &_menu
+      height: 30px
+      width: 100%
+      margin: 0 15px
+      transition: all 1s
+
+      &:last-of-type
+        margin-left: 135px
+        position: relative
 
     &_list
       margin: 0
@@ -63,24 +79,21 @@
       display: flex
       padding: 0
       justify-content: space-between
-
-    &_menu
-      color: $white
-      margin: 0 31px
-      z-index: 3
-      white-space: nowrap
-      line-height: 1.5
-      display: inline-block
-
-      &:nth-child(1)
-        margin: 0 80px 0 0
-        font-weight: Bold
-        font-size: 32px
-        line-height: 1
+      transition: 1s
 
       &:last-child
-        margin-left: 135px
+        margin-left: 200px
         position: relative
+
+    &_dia
+      position: relative
+      top: 30px
+      margin: 0
+      font-weight: Bold
+      font-size: 32px
+      line-height: 1
+      color: #FFFFFF
+      transition: 1s
 
 .global
   font-weight: 900
@@ -213,6 +226,13 @@
       width: calc(100% - 200px)
       justify-content: space-evenly
       margin-left: 100px
+      text-align: left
+
+      &_dia
+        position: absolute
+
+      &_list
+        margin-top: 35px
 
       &_menu
         margin: 0
@@ -297,22 +317,36 @@
   .header
     &__block1
       height: 1600px
+
     &__nav
-      top: 120px
+      top: 10px
+      width: 100%
+      text-align: center
+      left: 0
+      margin: 0
+
+      &_dia
+        position: absolute
+        left: 50px
+
       &_list
         flex-direction: column
         align-items: center
+        margin-top: 25px
+
+        &:last-child
+          margin-left: 0
 
       &_menu
         margin-top: 10px
 
   .global
     width: 100%
-    font-size: 45px
+    font-size: 40px
 
     &__bigConteiner
       position: relative
-      margin-top: 260px
+      margin-top: 270px
       margin-left: 10px
       text-align: center
 
