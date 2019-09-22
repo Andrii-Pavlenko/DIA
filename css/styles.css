@@ -638,11 +638,11 @@ a {
     .clients__img_3 {
       background-image: url("../im/client-img3.svg"); }
   .clients__photo {
-    width: 1100px;
+    width: 900px;
     height: 975px;
     position: absolute;
     bottom: 0;
-    right: -52px;
+    right: 0;
     background-image: url("../im/clients.png"); }
 
 @media screen and (max-width: 900px) {
