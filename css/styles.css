@@ -7,7 +7,9 @@ body, ul, li, a, p, button, h1, input {
   text-decoration: none;
   list-style: none;
   display: inline;
-  border: none; }
+  border: none;
+  font-family: "Muli", sans-serif;
+  font-size: 16px; }
 
 a {
   color: white; }
@@ -16,7 +18,6 @@ a {
   display: flex;
   flex-direction: row;
   position: relative;
-  font-family: "Muli", sans-serif;
   width: 100%;
   min-height: 1170px;
   box-sizing: border-box;
@@ -350,7 +351,7 @@ a {
       .global__network_item {
         margin-top: 20px; } }
 .main {
-  max-width: 1600px;
+  width: 100%;
   font-family: inherit;
   background-color: #fcfcfd;
   position: relative;
@@ -386,12 +387,10 @@ a {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.5;
-    color: #334563;
-    font-family: "Muli", sans-serif; }
+    color: #334563; }
 
 .services {
-  max-width: 1600px;
-  font-family: "Muli", sans-serif;
+  width: 100%;
   height: auto;
   text-align: center;
   position: relative;
@@ -571,8 +570,7 @@ a {
       margin: 20px; } }
 .clients {
   background-color: #56CCF2;
-  font-family: "Muli", sans-serif;
-  max-width: 1600px;
+  width: 100%;
   height: 775px;
   position: relative;
   top: -245px;
@@ -607,7 +605,6 @@ a {
     line-height: 1.4;
     display: block; }
   .clients__text {
-    font-family: "Muli", sans-serif;
     color: #FFFFFF;
     margin-top: 64px;
     font-weight: normal;
@@ -654,8 +651,7 @@ a {
     margin: 0 auto;
     max-width: 404px; } }
 .testimonials {
-  font-family: "Muli", sans-serif;
-  max-width: 1600px;
+  width: 100%;
   min-height: 688px;
   position: relative;
   background-color: #FFFFFF;
@@ -663,7 +659,6 @@ a {
   padding-top: 165px; }
   .testimonials__welcome {
     font-weight: 800;
-    font-size: 16px;
     line-height: 1.5;
     display: block;
     color: #56CCF2;
@@ -783,9 +778,8 @@ a {
   .testimonials__heading {
     font-size: 28px; } }
 .vision {
-  max-width: 1600px;
+  width: 100%;
   height: 608px;
-  font-family: "Muli", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -832,9 +826,8 @@ a {
   .vision__text {
     padding: 20px; } }
 .footer {
-  font-family: "Muli", sans-serif;
   background-color: #fcfcfd;
-  max-width: 1600px;
+  width: 100%;
   min-height: 668px; }
   .footer__conteiner {
     max-width: 1600px;
@@ -871,7 +864,6 @@ a {
       width: 100%;
       height: 41px;
       margin: 24px auto;
-      font-family: inherit;
       background-color: #fcfcfd; }
       .footer__form_input:focus {
         outline: none;
@@ -949,7 +941,6 @@ a {
       height: 32px;
       margin: 53px 48px 0 0; }
   .footer__nav {
-    font-family: "Muli", sans-serif;
     display: flex;
     justify-content: flex-end;
     z-index: 2;
@@ -975,9 +966,8 @@ a {
     padding: 20px;
     width: 100%; } }
 .steps {
-  max-width: 1600px;
+  width: 100%;
   height: 900px;
-  font-family: "Muli", sans-serif;
   position: relative;
   background-color: #fcfcfd; }
   .steps__conteiner {
@@ -986,7 +976,6 @@ a {
     position: relative; }
   .steps__welcome {
     font-weight: 800;
-    font-size: 16px;
     line-height: 1.5;
     display: block;
     color: #56CCF2;
@@ -1009,11 +998,9 @@ a {
     line-height: 1.4;
     display: block; }
   .steps__text {
-    font-family: "Muli", sans-serif;
     color: #334563;
     margin-top: 64px;
     font-weight: normal;
-    font-size: 16px;
     line-height: 1.5; }
 
 @media screen and (max-width: 1100px) {
