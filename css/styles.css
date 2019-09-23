@@ -193,6 +193,7 @@ a {
     line-height: 1.5;
     position: relative;
     width: 416px;
+    height: 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -200,7 +201,7 @@ a {
     z-index: 5;
     text-transform: uppercase;
     align-items: center;
-    top: 280px;
+    top: 830px;
     left: 200px;
     transition: 1s; }
     .global__network_item {
