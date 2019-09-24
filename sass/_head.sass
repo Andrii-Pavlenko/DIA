@@ -344,7 +344,7 @@
 
   .global
     width: 100%
-    font-size: 40px
+    font-size: 45px
 
     &__bigConteiner
       position: relative
@@ -369,17 +369,18 @@
       position: absolute
       right: 0
       bottom: 0
-      margin-left: 150px
+      margin-left: 110px
       top: 110px
 
       &_2
-        left: -80px
+        left: -50px
+        margin-left: 80px
 
     &__network
       display: flex
       flex-direction: row
       width: 300px
-      left: 170px
+      left: 150px
       top: 650px
       box-sizing: border-box
       padding: 20px
@@ -387,4 +388,19 @@
       &_item
         margin-top: 20px
 
+@media screen and (max-width: 500px)
+  .global
+    font-size: 35px
 
+    &__conteiner
+      top: 650px
+
+      &__switch
+        top: 90px
+        margin-left: 120px
+
+        &__2
+          left: -50px
+
+    &__network
+      flex-direction: column

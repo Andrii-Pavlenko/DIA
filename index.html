@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dia</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,700,800,900&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
     </ul>
   </nav>
   <div class="global__bigConteiner">
-    <p class="global">Global digital agency</p>
+    <h1 class="global">Global digital agency</h1>
     <p class="global__text">By the same illusion which lifts the horizon of the sea to the level of<br>
       the spectator on a hillside, the sable cloud beneath.</p>
     <button class="global__btn" type="submit">Learn more</button>
@@ -50,7 +51,7 @@
   </div>
   <!--services-->
   <div class="services">
-    <h1 class="services__heading">What we do </h1>
+    <p class="services__heading">What we do </p>
     <div class="services__cards">
       <div class="services__card">
         <img src="im/kitchen.jpg" class="services__card__room">
@@ -206,9 +207,9 @@
     <div class="footer__left">
       <form method="get" action="#" class="footer__form">
         <p class="footer__form_welcome">Send us a message</p>
-        <input class="footer__form_input" type="submit" placeholder="Your email">
-        <input class="footer__form_input" type="submit" placeholder="Your name">
-        <input class="footer__form_input" type="submit" placeholder="Your message">
+        <input class="footer__form_input" type="email" name="email" placeholder="Your email">
+        <input class="footer__form_input" type="text" name="name"  placeholder="Your name">
+        <input class="footer__form_input" type="text" name="message" placeholder="Your message">
         <button class="footer__form_button" type="submit">Send</button>
       </form>
     </div>
