@@ -129,8 +129,18 @@
   .conteiners-with-numbers
     position: relative
     text-align: center
+
     &__1, &__2, &__3, &__4
       left: 0
       top: 0
       margin: 20px
+
+@media screen and (max-width: 500px)
+  .conteiners-with-numbers
+
+    &__1, &__2, &__3, &__4
+      margin: 20px 0
+
+      &:hover
+        transform: scale(1)
 
