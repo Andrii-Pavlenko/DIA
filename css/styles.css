@@ -389,6 +389,9 @@ a {
     line-height: 1.5;
     color: #334563; }
 
+@media screen and (max-width: 500px) {
+  .intro__text {
+    font-size: 20px; } }
 .services {
   width: 100%;
   height: auto;
@@ -458,7 +461,7 @@ a {
     grid-template-columns: 264px;
     justify-content: center; }
   .services__card {
-    margin: 0 30px; }
+    margin: 0; }
     .services__card:nth-child(2) {
       margin-top: 30px; } }
 .conteiners-with-numbers {
@@ -955,9 +958,13 @@ a {
       margin-top: 20px; }
 
 @media screen and (max-width: 1200px) {
+  .footer__nav {
+    margin-right: 0;
+    padding: 20px; }
   .footer__conteiner {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .footer__form {
     padding: 20px;
     width: 675px; } }
