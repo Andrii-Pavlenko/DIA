@@ -356,13 +356,21 @@ a {
     font-size: 35px; }
     .global__conteiner {
       top: 650px; }
-      .global__conteiner__switch {
-        top: 90px;
-        margin-left: 120px; }
-        .global__conteiner__switch__2 {
-          left: -50px; }
+      .global__conteiner__text {
+        font-size: 16px;
+        bottom: 200px;
+        left: 20px; }
+    .global__switch {
+      top: 130px;
+      margin-left: 140px;
+      width: 50px;
+      height: 35px; }
+      .global__switch__2 {
+        left: -50px; }
     .global__network {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-left: 50px;
+      left: 0; } }
 .main {
   width: 100%;
   font-family: inherit;
@@ -402,6 +410,9 @@ a {
     line-height: 1.5;
     color: #334563; }
 
+@media screen and (max-width: 500px) {
+  .intro__text {
+    font-size: 18px; } }
 .services {
   width: 100%;
   height: auto;
@@ -476,7 +487,9 @@ a {
       margin-top: 30px; } }
 @media screen and (max-width: 500px) {
   .services__card {
-    margin: 0; } }
+    margin: 0; }
+    .services__card:hover {
+      transform: scale(1); } }
 .conteiners-with-numbers {
   width: 240px;
   height: 256px;
@@ -584,6 +597,11 @@ a {
       left: 0;
       top: 0;
       margin: 20px; } }
+@media screen and (max-width: 500px) {
+  .conteiners-with-numbers__1, .conteiners-with-numbers__2, .conteiners-with-numbers__3, .conteiners-with-numbers__4 {
+    margin: 20px 0; }
+    .conteiners-with-numbers__1:hover, .conteiners-with-numbers__2:hover, .conteiners-with-numbers__3:hover, .conteiners-with-numbers__4:hover {
+      transform: scale(1); } }
 .clients {
   background-color: #56CCF2;
   width: 100%;
@@ -668,7 +686,11 @@ a {
     max-width: 404px; } }
 @media screen and (max-width: 500px) {
   .clients {
-    height: auto; }
+    height: 1000px; }
+    .clients__text {
+      font-size: 12px; }
+      .clients__text_1, .clients__text_2, .clients__text_3 {
+        margin: 0; }
     .clients__photo {
       display: none; } }
 .testimonials {
@@ -800,10 +822,11 @@ a {
     font-size: 28px; } }
 @media screen and (max-width: 500px) {
   .testimonials__welcome__conteiner {
-    padding: 20px;
+    padding: 10px;
     width: 250px; }
   .testimonials__card {
-    width: 270px; }
+    width: 270px;
+    margin: 0; }
   .testimonials__cards {
     width: 100%; } }
 .vision {
@@ -853,7 +876,8 @@ a {
     font-size: 38px;
     padding: 20px; }
   .vision__text {
-    padding: 20px; } }
+    padding: 20px;
+    font-size: 20px; } }
 .footer {
   background-color: #fcfcfd;
   width: 100%;
@@ -986,14 +1010,17 @@ a {
 @media screen and (max-width: 1200px) {
   .footer__conteiner {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .footer__form {
     padding: 20px;
     width: 675px; } }
 @media screen and (max-width: 800px) {
   .footer__form {
     padding: 20px;
-    width: 100%; } }
+    width: 100%; }
+  .footer__nav {
+    margin: 0; } }
 @media screen and (max-width: 500px) {
   .footer__form {
     max-width: 320px;
