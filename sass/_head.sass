@@ -33,6 +33,7 @@
     box-sizing: border-box
     font-weight: Bold
     max-width: 948px
+    position: absolute
     top: 51px
     position: absolute
     justify-content: center
@@ -315,10 +316,13 @@
       margin-left: calc(50% - 794px/2)
       top: 500px
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 899px)
+  .burger__nav.header__nav
+    display: block
+
   .header
     &__block1
-      height: 1600px
+      height: 1000px
 
     &__nav
       top: 10px
@@ -326,6 +330,8 @@
       text-align: center
       left: 0
       margin: 0
+      display: none
+      padding: 0
 
       &_dia
         position: absolute
@@ -334,7 +340,7 @@
       &_list
         flex-direction: column
         align-items: center
-        margin-top: 25px
+        margin-top: 0
 
         &:last-child
           margin-left: 0
@@ -348,7 +354,7 @@
 
     &__bigConteiner
       position: relative
-      margin-top: 270px
+      margin-top: 150px
       margin-left: 10px
       text-align: center
 
@@ -358,7 +364,7 @@
       font-size: 18px
 
     &__conteiner
-      top: 600px
+      top: 450px
       margin: 0 auto
       height: 640px
 
@@ -381,14 +387,22 @@
       flex-direction: row
       width: 300px
       left: 150px
-      top: 650px
+      top: 500px
       box-sizing: border-box
       padding: 20px
 
       &_item
         margin-top: 20px
+        margin-left: 20px
 
 @media screen and (max-width: 500px)
+  .header
+    &__block1
+      height: 1150px
+
+    &__nav_dia
+      left: 30px
+
   .global
     font-size: 35px
 
@@ -402,7 +416,7 @@
 
     &__switch
       top: 130px
-      margin-left: 140px
+      margin-left: 50px
       width: 50px
       height: 35px
 
@@ -411,5 +425,6 @@
 
     &__network
       flex-direction: column
-      margin-left: 50px
+      margin-left: 0
       left: 0
+      top: 600px

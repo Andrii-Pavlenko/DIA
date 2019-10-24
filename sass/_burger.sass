@@ -1,0 +1,72 @@
+.burger
+  &__button
+    position: absolute
+    right: 30px
+    top: 33px
+    z-index: 10
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: #56CCF2
+    transition: 1s
+
+    &:hover
+      transform: scale(1.2)
+
+  &__lines
+    position: absolute
+    width: 30px
+    height: 6px
+    background-color: #FCC304
+    border-radius: 32px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, 50%)
+
+    &::after, &::before
+      content: ''
+      position: absolute
+      width: 30px
+      height: 6px
+      background-color: #FCC304
+      border-radius: 32px
+      left: 0
+
+    &::after
+      top: 10px
+
+    &::before
+      top: -10px
+
+  &_active &__lines
+    background-color: transparent
+
+  &_active &__lines::after
+    top: 0
+    transform: rotate(45deg)
+
+  &_active &__lines::before
+    top: 0
+    transform: rotate(-45deg)
+
+  &__nav
+    display: block
+    flex-flow: column
+    height: 125px
+    overflow-y: auto
+    transition: 1s
+
+@media screen and (min-width: 900px)
+  .burger
+    display: none
+
+@media screen and (max-width: 500px)
+  .burger
+    &__button
+      right: 30px
+
+
+
+
+
+
