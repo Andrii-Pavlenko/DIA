@@ -3,7 +3,7 @@
   flex-direction: row
   position: relative
   width: 100%
-  min-height: 1170px
+  height: 1170px
   box-sizing: border-box
   background-color: $background-color-gray
   z-index: 1
@@ -35,7 +35,6 @@
     max-width: 948px
     position: absolute
     top: 51px
-    position: absolute
     justify-content: center
     margin-left: 227px
     transition: 1s
@@ -216,6 +215,7 @@
 @media screen and (max-width: 1500px)
   .header
     text-align: center
+    height: 1000px
 
     &__block2
       display: none
@@ -354,8 +354,7 @@
 
     &__bigConteiner
       position: relative
-      margin-top: 150px
-      margin-left: 10px
+      margin: 150px auto 0
       text-align: center
 
     &__text
@@ -375,12 +374,14 @@
       position: absolute
       right: 0
       bottom: 0
-      margin-left: 110px
+      margin: 0 auto
       top: 110px
 
+      &_1
+        left: 70px
+
       &_2
-        left: -50px
-        margin-left: 80px
+        left: -70px
 
     &__network
       display: flex
@@ -390,6 +391,7 @@
       top: 500px
       box-sizing: border-box
       padding: 20px
+      margin-left: calc(45% - 300px)
 
       &_item
         margin-top: 20px
@@ -397,6 +399,7 @@
 
 @media screen and (max-width: 500px)
   .header
+    min-height: 1200px
     &__block1
       height: 1150px
 
@@ -406,7 +409,13 @@
   .global
     font-size: 35px
 
+    &__bigConteiner
+      margin: 150px auto 0
+
     &__conteiner
+      display: flex
+      flex-direction: column
+      align-items: center
       top: 650px
 
       &__text
@@ -416,11 +425,14 @@
 
     &__switch
       top: 130px
-      margin-left: 50px
+      margin: 0 auto
       width: 50px
       height: 35px
 
-      &__2
+      &_1
+        left: 50px
+
+      &_2
         left: -50px
 
     &__network
@@ -428,3 +440,7 @@
       margin-left: 0
       left: 0
       top: 600px
+      width: 100%
+
+      &_item
+        margin: 0
