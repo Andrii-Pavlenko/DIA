@@ -1,0 +1,47 @@
+.main
+  width: 100%
+  font-family: inherit
+  background-color: #fcfcfd
+  position: relative
+  z-index: 1
+  min-height: 100%
+
+.intro
+  max-width: 742px
+  margin: 0 auto 160px
+  background-color: $background-color-gray
+  box-sizing: content-box
+  padding: 30px
+
+
+  &__welcome
+    font-weight: 800
+    font-size: 16px
+    line-height: 1.5
+    display: block
+    color: $blue
+    text-transform: uppercase
+    margin-left: 36px
+    margin-bottom: 19px
+
+    &::before
+      content: ''
+      background-image: url("../im/Vector.svg")
+      height: 21px
+      width: 21px
+      color: $blue
+      display: block
+      margin-left: -37px
+      margin-bottom: -23px
+
+  &__text
+    font-weight: 600
+    font-size: 24px
+    line-height: 1.5
+    color: $text-color
+
+@media screen and (max-width: 500px)
+  .intro
+    &__text
+      font-size: 20px
+

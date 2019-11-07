@@ -1,0 +1,170 @@
+.testimonials
+  width: 100%
+  min-height: 688px
+  position: relative
+  background-color: $white
+  top: -245px
+  padding-top: 165px
+
+  &__welcome
+    font-weight: 800
+    line-height: 1.5
+    display: block
+    color: $blue
+    text-transform: uppercase
+    margin: 0 0 19px 40px
+
+    &::before
+      content: ''
+      background-image: url("../im/Vector.svg")
+      height: 21px
+      width: 21px
+      color: $blue
+      display: block
+      margin-left: -37px
+      margin-bottom: -23px
+
+    &__conteiner
+      width: 362px
+      margin-left: 227px
+      transition: 1s
+
+  &__heading
+    color: $black
+    width: 100%
+    font-weight: 900
+    font-size: 32px
+    line-height: 1.4
+    display: block
+
+  &__cards
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    max-width: 1100px
+    margin: 86px auto
+
+  &__card
+    width: 314px
+    height: 464px
+    background: $white
+    box-shadow: $shadow
+    padding-top: 90px
+    box-sizing: border-box
+    text-align: center
+    position: relative
+    transition: 1s
+
+    &:hover
+      background-color: pink
+      cursor: pointer
+      transform: translateY(-50px)
+
+  &__capsule
+    width: 162px
+    height: 64px
+    border-radius: 500px
+    transform: rotate(-65deg)
+    position: relative
+    left: 76px
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%)
+
+    &_1
+      background-color: $blue
+
+    &_2
+      background-color: $orange
+
+    &_3
+      background-color: $red
+
+  &__photo
+    position: absolute
+    width: 90px
+    height: 139px
+    left: 102px
+    bottom: 230px
+
+  &__text
+    font-style: italic
+    font-weight: normal
+    font-size: 14.4px
+    line-height: 150%
+    color: $black
+    display: block
+    margin-top: 75px
+    text-align: center
+
+  &__line
+    width: 64px
+    height: 2px
+    border-radius: 50%
+    display: block
+    position: relative
+    z-index: 2
+    margin: 31px 121px
+
+    &_1
+      background-color: $blue
+
+    &_2
+      background-color: $orange
+
+    &_3
+      background-color: $red
+
+  &__name
+    display: block
+    font-weight: bold
+    font-size: 12.6px
+    line-height: 1.5
+
+  &__position
+    font-weight: 800
+    font-size: 12.6px
+    line-height: 1.5
+
+    &_1
+      color: $blue
+
+    &_2
+      color: $orange
+
+    &_3
+      color: $red
+
+@media screen and (max-width: 1100px)
+  .testimonials
+    &__cards
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+
+    &__card
+      margin: 20px
+      &:hover
+        transform: translateY(0)
+
+@media screen and (max-width: 900px)
+  .testimonials
+    padding-top: 50px
+    &__welcome
+      &__conteiner
+        margin: 0 auto
+
+    &__heading
+      font-size: 28px
+
+@media screen and (max-width: 500px)
+  .testimonials
+    &__welcome
+      &__conteiner
+        padding: 10px
+        width: 250px
+
+    &__card
+      width: 270px
+      margin: 0
+
+    &__cards
+      width: 100%

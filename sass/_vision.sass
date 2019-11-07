@@ -1,0 +1,55 @@
+.vision
+  width: 100%
+  height: 608px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+  top: -245px
+  background-image: url("../im/background.jpg")
+  background-size: contain
+  object-fit: cover
+  background-color: $background-color-gray
+
+  &__heading
+    font-weight: 900
+    font-size: 48px
+    line-height: 1
+    text-align: center
+    color: $black
+    display: block
+
+  &__text
+    font-weight: 600
+    font-size: 24px
+    line-height: 1.5
+    text-align: center
+    color: $text-color
+    display: block
+    margin: 57px 0 55px
+
+
+  &__button
+    width: 226px
+    height: 56px
+    background-color: $button
+    border-radius: 64px
+    color: $white
+    font-weight: bold
+    line-height: 1.5
+    text-align: center
+    font-size: 16px
+    display: block
+    font-family: inherit
+    cursor: pointer
+
+@media screen and (max-width: 900px)
+  .vision
+    &__heading
+      font-size: 38px
+      padding: 20px
+
+    &__text
+      padding: 20px
+      font-size: 20px
